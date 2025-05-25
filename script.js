@@ -15,7 +15,7 @@ const sortedBands = bands.slice().sort((a, b) => {
   return nameA.localeCompare(nameB);
 });
 
-const ul = document.getElementById('band');
+const ul = document.getElementById('bands');
 sortedBands.forEach(band => {
   const li = document.createElement('li');
   li.textContent = band;
